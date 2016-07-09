@@ -10,7 +10,7 @@
 * _INLINE: Forces the inline of the step function
 * _OFFSET_BUFFER: One of the buffers will have an offset, with the objective of avoiding cache block sharing when cache associativity is too low
 * _OFFSET_BUFFER_SIZE=: If _OFFSET_BUFFER is defined, this will be the offset size, in bytes
-* _RESTRICT: Adds the restrict keyword, to warn the compiler about no memory aliasing
+* _RESTRICT: Add the restrict keyword in the step function, to warn the compiler about no occurrence of memory aliasing
 */
 
 typedef float cell;
@@ -304,3 +304,4 @@ int main()
 #endif
 	return 0;
 }
+
